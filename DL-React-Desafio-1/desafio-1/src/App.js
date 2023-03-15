@@ -1,25 +1,40 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Card from './components/Card/Card'
+import ImageCard from './components/Card/Card';
+import { Row } from 'react-bootstrap';
+import Footer from './components/Footer/Footer'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header
+        title="Galería de imagenes en React"
+      />
+      <Row>
+        <ImageCard
+          src="https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_960_720.jpg"
+          title="Floater"
+          description="Correr sobre el labio de la ola"
+        />
+        <ImageCard
+          src="https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_960_720.jpg"
+          title="Floater"
+          description="Correr sobre el labio de la ola"
+        />
+        <ImageCard
+          src="https://cdn.pixabay.com/photo/2017/04/08/10/23/surfing-2212948_960_720.jpg"
+          title="Floater"
+          description="Correr sobre el labio de la ola"
+        />
+      </Row>
+      <Footer
+        description="ilustraciones descriptivas de maniobras de Surf"
+      />
     </div>
-  );
+  )
 }
 
 export default App;
