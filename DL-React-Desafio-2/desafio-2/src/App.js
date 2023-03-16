@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Login from './components/Login/Login'
+import Alert from './components/Alert/Alert'
+import Container from 'react-bootstrap/Container';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
+      <Login />
+      <Alert />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
