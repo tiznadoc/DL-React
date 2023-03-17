@@ -3,8 +3,8 @@ import React from 'react';
 
 const Alert = ({message}) => {
   return (
-    <div className="alert">
-      {message.msge}
+    <div className={`alert alert-${message.color}`}>
+      <h5>{message.message}</h5>
     </div>
   )
 }

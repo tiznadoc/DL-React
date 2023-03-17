@@ -9,10 +9,10 @@ const Login = ({setMessage}) => {
   const submit = (e) => {
     e.preventDefault()
     if(email.trim() === 'victor@desafio.2' && password.trim() === 'perfect10'){
-      setMessage({msge: 'Welcome', bsStyle: 'info'})
+      setMessage({message: 'Welcome', color: 'info'})
     }
     else{
-      setMessage({msge: 'Try again', bsStyle: 'danger'})
+      setMessage({message: 'Try again', color: 'danger'})
     }
   }
   return (

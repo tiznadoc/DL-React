@@ -4,7 +4,7 @@ import Login from './components/Login/Login'
 import Alert from './components/Alert/Alert'
 
 const App = () => {
-  const [message, setMessage] = useState({msge: '', bsStyle: ''})
+  const [message, setMessage] = useState({message: '', color: ''})
   return (
     <div className='container'>
       <br/>
