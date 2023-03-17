@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const TableRow = ({user}) => {
+  const {id, name, email} = user
   return (           
         <tr>
-            <td>{user.nombre}</td>
-            <td>{user.correo}</td>
+            <td>{name}</td>
+            <td>{email}</td>
         </tr>
-  )
-}
+  );
+};
 
 export default TableRow;
