@@ -2,8 +2,8 @@ import React from 'react'
 
 const Alert = () => {
   return (
-    <div>
-    <h1>Alert</h1>
+    <div className='container'>
+      <h1>Alert</h1>
     </div>
   )
 }

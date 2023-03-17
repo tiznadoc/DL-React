@@ -5,8 +5,10 @@ import Container from 'react-bootstrap/Container';
 
 const App = () => {
   return (
-    <div>
+    <div className='container'>
+      <br/>
       <Login />
+      <br/>
       <Alert />
     </div>
   )
