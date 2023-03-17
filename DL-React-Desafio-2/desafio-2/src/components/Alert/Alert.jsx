@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+
 
 const Alert = () => {
   return (
-    <div className='container'>
+    <div className='alert alert-info'>
       <h1>Alert</h1>
     </div>
   )

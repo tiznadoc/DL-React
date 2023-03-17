@@ -6,10 +6,19 @@ import Form from 'react-bootstrap/Form';
 const Login = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const submit = (e) => {
+    e.preventDefault()
+    if(email.trim() === 'victor@desafio.2' && password.trim() === 'perfect10'){
+      console.log('welcome {setEmail}')
+    }
+    else{
+      console.log('try again')
+    }
+  }
   return (
       <div className='container'>
-        <h1>Desafio - Eventos y Componentes</h1>
-        <Form>
+        <h1>Desafio - Eventos & Componentes</h1>
+        <Form onSubmit={submit}>
             <Form.Group className="mb-3" controlId="email">
               <Form.Label>Email address</Form.Label>
               <Form.Control type="email" placeholder="Enter email" value={email} onChange={e=>setEmail(e.target.value)}/>
