@@ -1,10 +1,10 @@
 import React from 'react';
 
 
-const Alert = () => {
+const Alert = ({message}) => {
   return (
-    <div className='alert alert-info'>
-      <h1>Alert</h1>
+    <div className="alert">
+      {message.msge}
     </div>
   )
 }

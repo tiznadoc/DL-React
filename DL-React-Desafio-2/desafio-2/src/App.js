@@ -1,15 +1,16 @@
 import React from 'react'
+import { useState } from 'react'
 import Login from './components/Login/Login'
 import Alert from './components/Alert/Alert'
-import Container from 'react-bootstrap/Container';
 
 const App = () => {
+  const [message, setMessage] = useState({msge: '', bsStyle: ''})
   return (
     <div className='container'>
       <br/>
-      <Login />
+      <Login setMessage={setMessage}/>
       <br/>
-      <Alert />
+      <Alert message={message}/>
     </div>
   )
 }

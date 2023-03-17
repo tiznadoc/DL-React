@@ -3,16 +3,16 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-const Login = () => {
+const Login = ({setMessage}) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const submit = (e) => {
     e.preventDefault()
     if(email.trim() === 'victor@desafio.2' && password.trim() === 'perfect10'){
-      console.log('welcome {setEmail}')
+      setMessage({msge: 'Welcome', bsStyle: 'info'})
     }
     else{
-      console.log('try again')
+      setMessage({msge: 'Try again', bsStyle: 'danger'})
     }
   }
   return (
